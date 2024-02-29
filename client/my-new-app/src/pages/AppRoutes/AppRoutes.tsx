@@ -6,6 +6,7 @@ import CarUpdateForm from "../CarUpdateForm/CarUpdateForm";
 import CarCreateForm from "../CarCreateForm/CarCreateForm";
 import CarCreated from "../CarCreateForm/CarCreated";
 import CarDeleted from "../CarView/CarDeleted";
+import CarUpdated from "../CarUpdateForm/CarUpdated";
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
         <Route path="/carcreated/:id" element={<CarCreated />} />
         <Route path="/cardeleted/:id" element={<CarDeleted />} />
         <Route path="/updatecar/:id" element={<CarUpdateForm />} />
+        <Route path="/updatedcar/:id" element={<CarUpdated />} />
       </Routes>
     </HashRouter>
   );

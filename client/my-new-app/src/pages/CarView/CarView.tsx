@@ -67,12 +67,13 @@ export default function CarView() {
       <p>{car.name}</p>
       <p>{car.horsepower}</p>
       <p>{car.color}</p>
+      <Link to={`/updatecar/${id}`}>
+        <p>Update car</p>
+      </Link>
       <form>
         <p>Abyste smazali auto, zadejte prosim jmeno auta</p>
         <input type="text" placeholder={car.name} onChange={handleChange} />
-        <button onClick={handleDelete}>
-          Smazat auto
-        </button>
+        <button onClick={handleDelete}>Smazat auto</button>
         <p>{info}</p>
       </form>
       <Link to={"/"}>
